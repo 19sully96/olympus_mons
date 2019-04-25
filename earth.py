@@ -1,5 +1,7 @@
 # start from Example 8.5 program odesim.py
 import numpy as np
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 # constants
@@ -42,10 +44,10 @@ while r[1]>=0:
 
 # make plot for part (b)
 p1 = plt.figure(1)
-plt.plot(xpoints,ypoints)
+plt.plot(xpoints,ypoints,label='m = 1 kg')
 plt.xlabel("x [m]")
 plt.ylabel('y [m]')
-p1.show()
+p1.savefig('plot1_earth.png')
 
 # try different values of m
 p2 = plt.figure(2)
@@ -69,6 +71,6 @@ for m in [0.25,0.5,1,2,4]:
 
 plt.xlabel("x [m]")
 plt.ylabel('y [m]')
+plt.title('Earth')
 plt.legend()
-p2.show()
-
+p2.savefig('earth_masses.png')
