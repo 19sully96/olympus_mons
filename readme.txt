@@ -2,6 +2,8 @@
 
 The files in this directory are used to solve the Session 24 programming activity.  The files earth.py and mars.py make plots of the equations of motion for a cannonball being fired at 100 m/s at 30 degrees for varying masses.  
 
+The file olympusmons.py plots equations of motion for a cannonball fired at 10000m/s at various degrees for 50kg ball on mars.
+
 ## Usage
 
 To run the program and make the plots, run the executable run.sh
