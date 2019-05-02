@@ -35,7 +35,7 @@ ypoints = []
 
 # try different values of theta
 p2 = plt.figure(2)
-for angle in [20,32.5,45,57.5,70]:
+for angle in [10,16,22,28,34,40]:
     theta = angle*np.pi/180
     const = (rho*C*np.pi*R**2)/(2.0*m)
     r = np.array([0.0,0.0,v0*np.cos(theta),v0*np.sin(theta)],float)
